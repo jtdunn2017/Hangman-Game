@@ -9,7 +9,7 @@
     <meta name="description" content="Hangman Game">
     <meta name="Thomas Dunn" content="UCF BootCamp">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
     <!-- Jquery hook -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
@@ -31,38 +31,19 @@
 </head>
 
 <body>
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <style>
-        .floating-box {
-            display: inline-block;
-            width: 30px;
-            height: 20px;
-            margin: 10px;
-            text-align: center;
-        }
-        
-        </style>
-        </head>
-        <body>
-        
-        <h2>Guess This Word</h2>
-        
-        <div id="f1" class="floating-box"><strong>_</strong></div>
-        <div class="floating-box">_</div>
-        <div class="floating-box">_</div>
-        <div class="floating-box">_</div>
-        <div class="floating-box">_</div>
-        <div class="floating-box">_</div>
-        <div class="floating-box">_</div>
-        <div class="floating-box">_</div>
-        
-        <div class="after-box">Another box, after the floating boxes...</div>
-        
-        </body>
-        </html>
-        
+    <script type="text/javascript">
+        var wordArray = ["Animal", "Vegetable", "Mineral"];
+        var targetWord = wordArray[1];
+        var str = targetWord;
+        var wordlength = targetWord.length;
+        var wordSplit = targetWord.split("");
+        for (var j = 0; j < wordlength; j++) {
+            console.log(targetWord[j]);
+        } 
+        console.log("the length of targetWord is: " + targetWord.length);
+        console.log("the value at index 4 is: " + targetWord[4]);
+        var myword="abcdefg";
+        console.log("the length of myword is: " + myword.length);
+    </script>
 </body>
-
 </html>
