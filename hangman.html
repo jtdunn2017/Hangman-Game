@@ -50,7 +50,7 @@
         var correct_guess = 0;
         //
         //
-        for (var s = 0; s <= target_word.length; s + 2) {
+        for (var s = 0; s <= target_word.length; s=s + 2) {
             scrnArray[s] = "_";
             scrnArray[s + 1] = " ";
         }
@@ -83,6 +83,8 @@
             } else {
                 wrong_guesses++;
             }
+            scrnResult = scrnArray.toString();
+            console.log(" Array status: " + scrnResult);
         }
          // check to see if any letters have not been guessed
         for (var n = 0; n <= scrnArray.length; n++) {
